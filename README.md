@@ -20,38 +20,41 @@
 
 ---
 
-## 📂 Project Structure
-MailPhoneExtractor/ ├── README.md ├── requirements.txt ├── clean_text.py ├── extract_emails.py ├── extract_phones.py ├── main.py ├── sample_data/ │ └── sample_input.xlsx
-
----
-
 ## 📥 Installation
 ```bash
 git clone https://github.com/yourusername/MailPhoneExtractor.git
 cd MailPhoneExtractor
 pip install -r requirements.txt
+```
 
-🧩 Usage
+---
+
+## 🧩 Usage
 Prepare an input Excel file sample_input.xlsx inside the sample_data/ folder with a column named message.
 Then run:
+```bash
 python main.py
+```
 
 The cleaned and extracted emails/phones will be saved to a new Excel file:
 output_result.xlsx
 
-📊 Example
-**Input text:**
-Hello, you can reach me at john.doe@example.com or call me at (123) 456-7890. Thanks!
-Extracted Output:
+---
 
+## 📊 Example
+**Input text:**
+```bash
+Hello, you can reach me at john.doe@example.com or call me at (123) 456-7890. Thanks!
+```
 **Extracted Output:**
 
 | email_1               | phone_1       |
 |:----------------------|:--------------|
 | john.doe@example.com   | (123) 456-7890 |
 
+---
 
-📌 Requirements
+## 📌 Requirements
 Python 3.7+
 pandas
 openpyxl
